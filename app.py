@@ -6,7 +6,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 DB_PATH = os.environ.get("DB_PATH", "notas.db")
-APP_VERSION = os.environ.get("APP_VERSION", "v1.0")
+APP_VERSION = os.environ.get("APP_VERSION", "v2.0")
 
 def init_db():
     if os.path.dirname(DB_PATH):
